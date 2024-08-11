@@ -1,0 +1,26 @@
+---
+title: Sample Lecture
+format: LMLslides-revealjs
+---
+
+## Introduction
+
+This is a sample deck for LML slides. The features include:
+
+1. Title slide with background image.
+2. A bunch of yaml defaults.
+3. Clickable logo in lower right that links to `littlemonkeylab.com`.
+4. No logo or slide number on title slide.
+5. Custom `:::poll` div for poll questions.
+
+## Example poll
+
+You can provide set up for the code as if it is a normal slide.
+
+::: poll
+What is your favorite color?
+
+A. Red  
+B. Green  
+C. Blue  
+:::
