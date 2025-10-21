@@ -5,6 +5,7 @@
 @import url(https://fonts.googleapis.com/css?family=Commissioner&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Amatic+SC:Bold,700&display=swap);
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap');
 $font-family-sans-serif: "Commissioner" !default;
 $presentation-font-size-root: 46px;
 
@@ -14,6 +15,10 @@ $presentation-font-size-root: 46px;
   --orange-100: #f2a03d;
   --green-100: #02733e;
   --purple-100: #73245e;
+  --blue-100: #00817c;
+  --teal-100: #17a2b8;
+  --yellow-100: #ffc107;
+  --indigo-100: #6610f2;
 }
 
 $red: #bf2642;
@@ -22,9 +27,17 @@ $green: #02733e;
 $purple: #73245e;
 $dark-purple: #39122f;
 $blue: #00817c;
+$teal: #17a2b8;
+$yellow: #ffc107;
+$indigo: #6610f2;
 $beige: #f8f5f0;
 $dark-beige: #9f8e71;
 $light-orange: lighten($orange, 60%);
+$light-blue: lighten($blue, 65%);
+$light-green: lighten($green, 70%);
+$light-red: lighten($red, 65%);
+$light-purple: lighten($purple, 65%);
+$light-yellow: lighten($yellow, 40%);
 
 // set your custom colors here
 $body-color: #5c5859 !default;
@@ -249,5 +262,489 @@ div.meta-el {
 .reveal-header .header-logo {
   height: .55em;
   cursor: pointer;
+}
+
+// ============================================
+// PEDAGOGICAL FEATURES
+// ============================================
+
+// Learning Objectives
+.reveal .slide .objectives {
+  border-left: 5px solid $blue;
+  border-top: 2px solid $blue;
+  border-right: 2px solid $blue;
+  border-bottom: 2px solid $blue;
+  border-radius: 8px;
+  padding: 1em 1em 0.5em 1em;
+  margin: 0.75em 0;
+  background: $light-blue;
+
+  &::before {
+    content: "Learning Objectives";
+    display: block;
+    font-weight: bold;
+    font-size: 0.9em;
+    color: $blue;
+    margin-bottom: 0.5em;
+  }
+
+  ul, ol {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+  }
+}
+
+// Key Concepts / Definitions
+.reveal .slide .definition {
+  border-left: 5px solid $purple;
+  border-radius: 5px;
+  padding: 0.75em;
+  margin: 0.75em 0;
+  background: $light-purple;
+
+  &::before {
+    content: "Definition";
+    display: block;
+    font-weight: bold;
+    font-size: 0.85em;
+    color: $purple;
+    margin-bottom: 0.3em;
+  }
+}
+
+.reveal .slide .concept {
+  border-left: 5px solid $indigo;
+  border-radius: 5px;
+  padding: 0.75em;
+  margin: 0.75em 0;
+  background: lighten($indigo, 68%);
+
+  &::before {
+    content: "Key Concept";
+    display: block;
+    font-weight: bold;
+    font-size: 0.85em;
+    color: $indigo;
+    margin-bottom: 0.3em;
+  }
+}
+
+// Examples
+.reveal .slide .example {
+  border-left: 5px solid $green;
+  border-radius: 5px;
+  padding: 0.75em;
+  margin: 0.75em 0;
+  background: $light-green;
+
+  &::before {
+    content: "Example";
+    display: block;
+    font-weight: bold;
+    font-size: 0.85em;
+    color: $green;
+    margin-bottom: 0.3em;
+  }
+}
+
+// Warnings and Cautions
+.reveal .slide .warning {
+  border-left: 5px solid $red;
+  border-radius: 5px;
+  padding: 0.75em;
+  margin: 0.75em 0;
+  background: $light-red;
+
+  &::before {
+    content: "⚠ Warning";
+    display: block;
+    font-weight: bold;
+    font-size: 0.85em;
+    color: $red;
+    margin-bottom: 0.3em;
+  }
+}
+
+.reveal .slide .caution {
+  border-left: 5px solid $orange;
+  border-radius: 5px;
+  padding: 0.75em;
+  margin: 0.75em 0;
+  background: $light-orange;
+
+  &::before {
+    content: "⚡ Caution";
+    display: block;
+    font-weight: bold;
+    font-size: 0.85em;
+    color: darken($orange, 10%);
+    margin-bottom: 0.3em;
+  }
+}
+
+// Tips and Notes
+.reveal .slide .tip {
+  border-left: 5px solid $teal;
+  border-radius: 5px;
+  padding: 0.75em;
+  margin: 0.75em 0;
+  background: lighten($teal, 55%);
+
+  &::before {
+    content: "💡 Tip";
+    display: block;
+    font-weight: bold;
+    font-size: 0.85em;
+    color: $teal;
+    margin-bottom: 0.3em;
+  }
+}
+
+.reveal .slide .note {
+  border-left: 5px solid $yellow;
+  border-radius: 5px;
+  padding: 0.75em;
+  margin: 0.75em 0;
+  background: $light-yellow;
+
+  &::before {
+    content: "📝 Note";
+    display: block;
+    font-weight: bold;
+    font-size: 0.85em;
+    color: darken($yellow, 30%);
+    margin-bottom: 0.3em;
+  }
+}
+
+// Theorem and Proof
+.reveal .slide .theorem {
+  border: 2px solid $dark-purple;
+  border-radius: 5px;
+  padding: 0.75em;
+  margin: 0.75em 0;
+  background: lighten($purple, 70%);
+
+  &::before {
+    content: "Theorem";
+    display: block;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 0.85em;
+    color: $dark-purple;
+    margin-bottom: 0.3em;
+  }
+}
+
+.reveal .slide .proof {
+  border-left: 3px solid $dark-beige;
+  padding: 0.5em 0.75em;
+  margin: 0.75em 0 0.75em 1em;
+  background: lighten($beige, 3%);
+  font-style: italic;
+
+  &::before {
+    content: "Proof. ";
+    display: inline;
+    font-weight: bold;
+    font-style: italic;
+    color: $dark-beige;
+  }
+
+  &::after {
+    content: " ∎";
+    display: inline;
+    float: right;
+    font-weight: bold;
+    font-style: normal;
+  }
+}
+
+// Exercise boxes
+.reveal .slide .exercise {
+  border: 3px solid #003559;
+  border-radius: 8px;
+  padding: 0.75em;
+  margin: 0.75em 0;
+  background: #E8F4F8;
+
+  &::before {
+    content: "✏️ Exercise";
+    display: block;
+    font-weight: bold;
+    font-size: 0.85em;
+    color: #003559;
+    margin-bottom: 0.3em;
+  }
+}
+
+// Solution (can be collapsible with details/summary)
+.reveal .slide .solution {
+  border-left: 4px solid $green;
+  padding: 0.5em 0.75em;
+  margin: 0.5em 0;
+  background: lighten($green, 73%);
+
+  &::before {
+    content: "Solution: ";
+    display: inline;
+    font-weight: bold;
+    font-size: 0.85em;
+    color: $green;
+  }
+}
+
+// Highlighted quote/callout
+.reveal .slide .callout {
+  text-align: center;
+  padding: 1em;
+  margin: 1em 0;
+  background: $beige;
+  border-top: 3px solid $blue;
+  border-bottom: 3px solid $blue;
+  font-size: 1.1em;
+  font-style: italic;
+}
+
+// Important highlight
+.reveal .slide .important {
+  border: 4px solid $red;
+  border-radius: 10px;
+  padding: 1em;
+  margin: 0.75em 0;
+  background: lighten($red, 68%);
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.05em;
+}
+
+// Two-column layout utilities
+.reveal .columns {
+  display: flex;
+  gap: 2em;
+  align-items: flex-start;
+
+  .column {
+    flex: 1;
+  }
+
+  &.align-center {
+    align-items: center;
+  }
+
+  &.align-bottom {
+    align-items: flex-end;
+  }
+}
+
+// Image containers with captions
+.reveal .img-container {
+  text-align: center;
+  margin: 1em 0;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid $dark-beige;
+    border-radius: 5px;
+  }
+
+  .caption {
+    font-size: 0.7em;
+    font-style: italic;
+    color: $dark-beige;
+    margin-top: 0.5em;
+  }
+}
+
+// Process steps / Timeline
+.reveal .slide .step {
+  position: relative;
+  padding-left: 2.5em;
+  margin: 1em 0;
+
+  &::before {
+    content: attr(data-step);
+    position: absolute;
+    left: 0;
+    width: 1.8em;
+    height: 1.8em;
+    border-radius: 50%;
+    background: $blue;
+    color: white;
+    font-weight: bold;
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    padding-top: 0.1em;
+  }
+}
+
+// Code annotation
+.reveal .slide .code-highlight {
+  background: lighten($yellow, 35%);
+  padding: 0 0.3em;
+  border-radius: 3px;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.9em;
+}
+
+// Summary/Takeaway section
+.reveal .slide .takeaway {
+  border: 4px double $blue;
+  border-radius: 10px;
+  padding: 1em;
+  margin: 1em 0;
+  background: linear-gradient(135deg, $light-blue 0%, lighten($blue, 70%) 100%);
+
+  &::before {
+    content: "🎯 Key Takeaway";
+    display: block;
+    font-weight: bold;
+    font-size: 0.95em;
+    color: $blue;
+    margin-bottom: 0.5em;
+  }
+}
+
+// Reference citation box
+.reveal .slide .reference {
+  font-size: 0.65em;
+  color: $dark-beige;
+  padding: 0.5em;
+  border-top: 1px solid $dark-beige;
+  margin-top: 1.5em;
+}
+
+// Side-by-side comparison
+.reveal .slide .comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5em;
+  margin: 1em 0;
+
+  .compare-item {
+    padding: 0.75em;
+    border-radius: 5px;
+
+    &.pro {
+      background: $light-green;
+      border-left: 5px solid $green;
+    }
+
+    &.con {
+      background: $light-red;
+      border-left: 5px solid $red;
+    }
+
+    h3, h4 {
+      margin-top: 0;
+      font-size: 0.9em;
+    }
+  }
+}
+
+// Progress indicator
+.reveal .slide .progress-bar {
+  width: 100%;
+  height: 8px;
+  background: $beige;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 1em 0;
+
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, $blue, $teal);
+    transition: width 0.3s ease;
+  }
+}
+
+// Emphasis boxes
+.reveal .slide .emphasize {
+  background: $light-orange;
+  border-left: 8px solid $orange;
+  padding: 0.75em 1em;
+  margin: 0.75em 0;
+  font-size: 1.05em;
+}
+
+// Fragment styling enhancements
+.reveal .slide .fragment.highlight-current-blue.current-fragment {
+  color: $blue;
+  font-weight: bold;
+}
+
+.reveal .slide .fragment.highlight-current-red.current-fragment {
+  color: $red;
+  font-weight: bold;
+}
+
+// Section divider
+.reveal .slide .section-divider {
+  text-align: center;
+  padding: 2em 0;
+  margin: 1em 0;
+
+  &::before,
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 30%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, $blue, transparent);
+    vertical-align: middle;
+  }
+
+  &::before {
+    margin-right: 1em;
+  }
+
+  &::after {
+    margin-left: 1em;
+  }
+}
+
+// Better list styling
+.reveal .slide ul.checklist {
+  list-style: none;
+  padding-left: 0;
+
+  li::before {
+    content: "✓ ";
+    color: $green;
+    font-weight: bold;
+    margin-right: 0.5em;
+  }
+}
+
+.reveal .slide ul.xlist {
+  list-style: none;
+  padding-left: 0;
+
+  li::before {
+    content: "✗ ";
+    color: $red;
+    font-weight: bold;
+    margin-right: 0.5em;
+  }
+}
+
+// Inline code enhancement
+.reveal .slide code {
+  font-family: 'Fira Code', monospace;
+}
+
+// Math equation highlighting
+.reveal .slide .equation-box {
+  background: $beige;
+  border: 2px solid $dark-beige;
+  border-radius: 5px;
+  padding: 1em;
+  margin: 1em 0;
+  text-align: center;
+  overflow-x: auto;
 }
 
