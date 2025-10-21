@@ -1,0 +1,399 @@
+---
+title: "Academic Lecture Template"
+subtitle: "A Comprehensive Guide to All Available Features"
+author: "Your Name"
+institute: "Your Institution"
+date: "2024"
+format: LMLslides-revealjs
+---
+
+# Introduction {background-color="#00817c"}
+
+## About This Template
+
+This comprehensive template demonstrates all the pedagogical features available in LMLslides for creating professional academic presentations.
+
+::: objectives
+- Learn how to use various pedagogical div styles
+- Understand layout options and formatting
+- Master interactive elements for engaging lectures
+- Apply best practices for academic presentations
+:::
+
+## Navigation Tips
+
+::: tip
+Use arrow keys to navigate slides. Press `?` for keyboard shortcuts, and `M` to access the slide menu.
+:::
+
+# Content Elements {background-color="#00817c"}
+
+## Learning Objectives
+
+Use the `objectives` class to clearly state what students will learn:
+
+::: objectives
+- Understand fundamental concepts
+- Apply knowledge to practical examples
+- Analyze complex problems
+- Synthesize information from multiple sources
+:::
+
+## Definitions and Key Concepts
+
+::: definition
+**Algorithm**: A step-by-step procedure for solving a problem or accomplishing a task, especially by a computer.
+:::
+
+::: concept
+Understanding the difference between time complexity and space complexity is crucial for algorithm analysis.
+:::
+
+## Examples
+
+::: example
+**Sorting Algorithm Example**
+
+To sort the array `[3, 1, 4, 1, 5]` using bubble sort:
+
+1. Compare adjacent elements
+2. Swap if they're in wrong order
+3. Repeat until no swaps needed
+
+Result: `[1, 1, 3, 4, 5]`
+:::
+
+## Notes and Tips
+
+::: note
+Remember that Big O notation describes the worst-case scenario, not the average case.
+:::
+
+::: tip
+Always test your code with edge cases like empty arrays, single elements, and duplicate values.
+:::
+
+## Warnings and Cautions
+
+::: warning
+Division by zero will crash your program! Always validate input before performing division operations.
+:::
+
+::: caution
+This algorithm has O(n²) complexity. Consider using a more efficient approach for large datasets.
+:::
+
+## Theorems and Proofs
+
+::: theorem
+For any positive integer n ≥ 1, the sum of the first n natural numbers is:
+$$\sum_{i=1}^{n} i = \frac{n(n+1)}{2}$$
+:::
+
+::: proof
+We proceed by mathematical induction.
+
+**Base case**: For n=1, $\sum_{i=1}^{1} i = 1 = \frac{1(1+1)}{2}$ ✓
+
+**Inductive step**: Assume true for n=k. For n=k+1:
+$$\sum_{i=1}^{k+1} i = \left(\sum_{i=1}^{k} i\right) + (k+1) = \frac{k(k+1)}{2} + (k+1) = \frac{(k+1)(k+2)}{2}$$
+:::
+
+# Interactive Elements {background-color="#00817c"}
+
+## Poll Questions
+
+::: poll
+What is the time complexity of binary search?
+
+A. O(n)
+B. O(log n)
+C. O(n log n)
+D. O(n²)
+:::
+
+::: question
+How might you optimize a linear search algorithm if the data is sorted?
+:::
+
+## Exercises and Solutions
+
+::: exercise
+Write a function that returns the factorial of a number n.
+
+**Constraints**: n ≥ 0, use recursion
+:::
+
+. . .
+
+::: solution
+```python
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    return n * factorial(n - 1)
+```
+:::
+
+## Application Exercises
+
+::: appex
+**Real-world Application**
+
+You're building a social media feed. Which data structure would be most appropriate for implementing the "most recent posts first" feature, and why?
+
+Consider:
+- Insertion time complexity
+- Retrieval order
+- Memory efficiency
+:::
+
+# Visual Enhancements {background-color="#00817c"}
+
+## Important Highlights
+
+::: important
+Deadlines are absolute! Submit your assignments before the cutoff time.
+:::
+
+::: emphasize
+This topic will be covered extensively on the final exam.
+:::
+
+## Callouts and Takeaways
+
+::: callout
+"The best way to learn programming is by doing, not just reading."
+:::
+
+::: takeaway
+Understanding data structures is fundamental to writing efficient code. Choose the right structure for your problem, and consider both time and space complexity.
+:::
+
+## Two-Column Layouts
+
+::: columns
+::: column
+**Advantages of Lists**
+
+- Fast sequential access
+- Simple implementation
+- Efficient memory use
+- Easy to understand
+:::
+
+::: column
+**Advantages of Trees**
+
+- Fast search operations
+- Hierarchical structure
+- Balanced trees guarantee O(log n)
+- Natural for certain problems
+:::
+:::
+
+## Side-by-Side Comparison
+
+::: comparison
+::: {.compare-item .pro}
+### Pros
+- Fast performance
+- Low memory usage
+- Scalable solution
+- Well-tested library
+:::
+
+::: {.compare-item .con}
+### Cons
+- Steep learning curve
+- Limited documentation
+- Breaking changes
+- Vendor lock-in
+:::
+:::
+
+# Lists and Typography {background-color="#00817c"}
+
+## Checklist Style
+
+::: checklist
+- Requirements gathering
+- System design
+- Implementation
+- Testing and QA
+- Deployment
+- Maintenance
+:::
+
+## X-List Style
+
+::: xlist
+- Skipping requirements analysis
+- Ignoring code reviews
+- No version control
+- Deploying without testing
+- Hardcoding credentials
+:::
+
+## Code Highlighting
+
+When discussing code inline, use the `.code-highlight` class for [inline code]{.code-highlight}.
+
+```python
+# This is a code block with syntax highlighting
+def hello_world():
+    print("Hello, World!")
+    return True
+```
+
+# Advanced Features {background-color="#00817c"}
+
+## Process Steps
+
+::: {.step data-step="1"}
+**Identify the Problem**
+Clearly define what needs to be solved
+:::
+
+::: {.step data-step="2"}
+**Design the Solution**
+Create algorithms and data structures
+:::
+
+::: {.step data-step="3"}
+**Implement and Test**
+Write code and verify correctness
+:::
+
+::: {.step data-step="4"}
+**Deploy and Monitor**
+Release to production and track performance
+:::
+
+## Mathematical Equations
+
+::: equation-box
+$$E = mc^2$$
+
+$$\int_{a}^{b} f(x)dx = F(b) - F(a)$$
+
+$$\lim_{x \to \infty} \frac{1}{x} = 0$$
+:::
+
+## Section Dividers
+
+::: section-divider
+Part II: Advanced Topics
+:::
+
+This helps organize long lectures into clear sections.
+
+# Special Text Styles {background-color="#00817c"}
+
+## Element Highlighting
+
+Use these for emphasizing specific concepts:
+
+- [Block-level elements]{.block-el} like `<div>` and `<section>`
+- [Inline elements]{.inline-el} like `<span>` and `<a>`
+- [Meta elements]{.meta-el} like `<head>` and `<meta>`
+
+## Adages and Quotes
+
+::: {.bigadage}
+Practice Makes Perfect
+:::
+
+::: {.smalladage}
+"First, solve the problem. Then, write the code."
+:::
+
+> Traditional blockquote styling is also available for longer quotations and references.
+
+## Inverse Boxes
+
+Use inverse boxes for [key terms]{.inversebox} or [critical concepts]{.inversebox} that need to stand out.
+
+# Layout Options {background-color="#00817c"}
+
+## Vertical Centering
+
+::: v-center-container
+This content is vertically centered on the slide.
+
+Perfect for title slides or single important points.
+:::
+
+## Image with Caption
+
+::: img-container
+![](LMLLOGO.png)
+
+::: caption
+Figure 1: Organization logo example
+:::
+:::
+
+# Incremental Reveals {background-color="#00817c"}
+
+## Fragment Animations
+
+Reveal content step by step:
+
+::: {.incremental}
+- First point appears
+- Then the second point
+- Finally the third point
+:::
+
+## Highlighted Fragments
+
+You can [highlight content]{.fragment .highlight-current-blue} as you [discuss it]{.fragment .highlight-current-red} during your presentation.
+
+# References and Citations {background-color="#00817c"}
+
+## Adding References
+
+::: reference
+**Sources:**
+
+1. Cormen, T. H., et al. (2009). *Introduction to Algorithms* (3rd ed.). MIT Press.
+2. Knuth, D. E. (1997). *The Art of Computer Programming*. Addison-Wesley.
+3. Sedgewick, R., & Wayne, K. (2011). *Algorithms* (4th ed.). Addison-Wesley.
+:::
+
+# Summary {background-color="#00817c"}
+
+## What We Covered
+
+::: takeaway
+This template includes:
+
+- 20+ pedagogical div classes for various content types
+- Layout utilities (columns, centering, comparisons)
+- Typography enhancements (code, equations, lists)
+- Interactive elements (polls, exercises, questions)
+- Professional styling for academic content
+:::
+
+## Getting Started
+
+::: objectives
+To use this template:
+
+1. Copy the `.qmd` file structure
+2. Modify the YAML header with your information
+3. Use the div classes with `:::` syntax
+4. Add your content within each section
+5. Render with Quarto to generate slides
+:::
+
+---
+
+## Thank You! {.center}
+
+Questions?
+
+::: reference
+For more information, visit your course website or contact the instructor.
+:::

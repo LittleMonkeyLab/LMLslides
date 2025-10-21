@@ -1,26 +1,114 @@
 ---
 title: Sample Lecture
+subtitle: Introduction to Data Structures
+author: Dr. Example
+institute: University Name
 format: LMLslides-revealjs
 ---
 
-## Introduction
+# Introduction {background-color="#00817c"}
 
-This is a sample deck for LML slides. The features include:
+## Features Overview
 
-1. Title slide with background image.
-2. A bunch of yaml defaults.
-3. Clickable logo in lower right that links to `littlemonkeylab.com`.
-4. No logo or slide number on title slide.
-5. Custom `:::poll` div for poll questions.
+This sample deck demonstrates LMLslides features:
 
-## Example poll
+1. Title slide with background image support
+2. Professional SCSS theme with pedagogical elements
+3. Clickable logo in lower right (links to `littlemonkeylab.com`)
+4. No logo or slide number on title slide
+5. 20+ custom div classes for academic content
 
-You can provide set up for the code as if it is a normal slide.
+## Learning Objectives
+
+::: objectives
+- Understand basic LMLslides features
+- Learn to use pedagogical div classes
+- Create engaging academic presentations
+- Apply best practices for teaching
+:::
+
+# Content Examples {background-color="#00817c"}
+
+## Definitions and Concepts
+
+::: definition
+**Data Structure**: A specialized format for organizing, processing, retrieving and storing data.
+:::
+
+::: concept
+Choosing the right data structure is crucial for algorithm efficiency and program performance.
+:::
+
+## Examples and Practice
+
+::: example
+**Stack Example**
+
+A stack follows Last-In-First-Out (LIFO) principle:
+```
+push(1) → [1]
+push(2) → [1, 2]
+pop()   → [1]
+```
+:::
+
+::: tip
+Always consider time and space complexity when selecting a data structure.
+:::
+
+## Interactive Elements
 
 ::: poll
-What is your favorite color?
+What is the time complexity of accessing an element in an array by index?
 
-A. Red  
-B. Green  
-C. Blue  
+A. O(1)
+B. O(log n)
+C. O(n)
+D. O(n²)
 :::
+
+## Exercise
+
+::: exercise
+Implement a function to reverse a string using a stack.
+
+**Hint**: Push all characters onto the stack, then pop them off.
+:::
+
+. . .
+
+::: solution
+```python
+def reverse_string(s):
+    stack = []
+    for char in s:
+        stack.append(char)
+    result = ""
+    while stack:
+        result += stack.pop()
+    return result
+```
+:::
+
+# Summary {background-color="#00817c"}
+
+## Key Takeaways
+
+::: takeaway
+- LMLslides provides rich pedagogical features
+- Use div classes like `:::objectives`, `:::example`, `:::poll`
+- Combine with Reveal.js features for interactive presentations
+- See `comprehensive-template.qmd` for all features
+:::
+
+## References
+
+::: reference
+For complete documentation, see `FEATURES.md`
+:::
+
+---
+
+## Thank You
+
+Questions?
